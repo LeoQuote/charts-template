@@ -21,6 +21,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    - name: Fetch history
+      run: git fetch --prune --unshallow
     - name: Helm Chart Testing
       uses: helm/chart-testing-action@v1.0.0-rc.2
       with:
