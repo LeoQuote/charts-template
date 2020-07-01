@@ -22,6 +22,10 @@ jobs:
     - name: Fetch history
       run: git fetch --prune --unshallow
 
+    - name: Configure Git
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
     # Runs a single command using the runners shell
     - name: Helm Chart Releaser
       uses: helm/chart-releaser-action@v1.0.0-rc.2
