@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nginx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-07-01T11:50:17.556009596Z"
+    description: A Helm chart for Kubernetes
+    digest: 720f7a2ec647e9cc0fcb07bd12b4404e040d1a7b783e7d51ce90a955bde0527d
+    name: nginx
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-template/releases/download/nginx-0.1.0/nginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-07-01T11:50:17.376849761Z"
